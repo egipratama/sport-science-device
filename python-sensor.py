@@ -52,7 +52,7 @@ try:
                         sleep(0.5)
                         led("C")
                         data = data + 1
-                        url = "https://us-central1-unikom-sport-science.cloudfunc$
+                        url = "https://us-central1-unikom-sport-science.cloudfunctions.net/running?id=" + idDevice + "&track=" + track + "&data=" + str(data) + "&gate=" + gate
                         r = requests.get(url)
                         print(r.text)
                         sleep(5)
