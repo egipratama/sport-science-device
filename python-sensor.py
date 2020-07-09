@@ -32,7 +32,7 @@ def led(color):
                 GPIO.output(27, GPIO.LOW)
                 GPIO.output(22, GPIO.LOW)
 
-urlKalibrasi = "https://us-central1-unikom-sport-science.cloudfunctions.net/kalib$
+urlKalibrasi = "https://us-central1-unikom-sport-science.cloudfunctions.net/kalibrasi?id=" + idDevice
 res = requests.get(urlKalibrasi)
 resEncode = json.loads(res.text)
 kalibrasi = resEncode["kalibrasi"]["track_1_kalibrasi"]
